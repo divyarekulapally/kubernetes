@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: nodeportservice
 spec:
-  type: nodeport
+  type: NodePort
   selector:
     app: test
   ports:
