@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: loadbalancerpod
+  labels:
+    app: test
+spec:
+  containers:
+  - name: loadbalancercontainer
+    image: rekulapallydivya/pythonrepo:pythondevenv
+    ports:
+    - containerPort: 5001
+      protocol: TCP
